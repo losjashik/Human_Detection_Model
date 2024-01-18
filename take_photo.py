@@ -2,6 +2,15 @@ import cv2
 import os
 
 def capture_photo(output_folder):
+    """
+    Capture a single frame from the default built-in webcam, save it as an image, and store it in the specified output folder.
+
+    Parameters:
+    - output_folder (str): The path to the folder where the captured image will be saved.
+
+    Example:
+    >>> capture_photo("capture")
+    """
     #folder if it doesn't exist
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
